@@ -19,7 +19,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class EtagConfig implements WebMvcConfigurer {
 
 	public FilterRegistrationBean<Filter> eTag() {
-		final FilterRegistrationBean<Filter> filterRegistrationBean = new FilterRegistrationBean<Filter>();
+		final FilterRegistrationBean<Filter> filterRegistrationBean = new FilterRegistrationBean<>();
 		filterRegistrationBean.setFilter(etagFilter());
 		filterRegistrationBean.addUrlPatterns("/*");
 		filterRegistrationBean.setName("ETagFilter");

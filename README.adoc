@@ -1,4 +1,4 @@
-# E-tag
+= E-tag
 
 1. Send Request
 2. Copy E-Tag from the header and use it in the next request with header key `IF-NONE-MATCH'
